@@ -1,0 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.com.agenda.dao;
+
+import br.com.agenda.bens.Contato;
+import br.com.agenda.bens.TipoContato;
+import java.util.List;
+
+/**
+ *
+ * @author Alunos
+ */
+public interface ContatoDao extends BaseDao {
+
+    public List<Contato> listarTodos(TipoContato tipo) throws Exception;
+
+    public List<Contato> listarTodos() throws Exception;
+
+    public void gravarTelefones(Contato contato) throws Exception;
+}
